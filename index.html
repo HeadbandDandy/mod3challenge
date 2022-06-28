@@ -4,20 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Password Generator</title>
     <script src="./script.js" defer></script>
     <link rel="stylesheet" href="./assets/style.css">
+    <title>Password Generator</title>
+
 
   </head>
   <body>
       <div class="container">
-          <h1>Password Generator</h1>
-          <h3>password</h3>
+          <h1 class="title">Password Generator</h1>
+          <h3 class="password-display" id="passwordDisplay">password</h3>
           <form id="passwordGeneratorForm" class="form">
               <label for="characterAmountNumber"> Number of Characters</label>
+              <div class="character-amount-container">
               <input type="range" min="8" max="128" value="10"
               id="characterAmountRange">
-              <input type="number" min="8" max="128" value="10"
+              <input class="number-input" type="number" min="8" max="128" value="10"
               id="characterAmountNumber">
 
               <label for="includeUppercase">Include Uppercase</label>

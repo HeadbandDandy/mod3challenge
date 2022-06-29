@@ -15,6 +15,8 @@ const passwordDisplay = document.getElementById('passwordDisplay')
 characterAmountNumber.addEventListener('input', syncCharacterAmount)
 characterAmountRange.addEventListener('input', syncCharacterAmount)
 
+// above makes the Listener API look for data from inputs by the amount number and range
+
 form.addEventListener('submit', e => {
     e.preventDefault()
     const characterAmount = characterAmountNumber.value

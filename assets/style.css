@@ -40,4 +40,33 @@ label {
   display: flex;
   align-items: flex;
 }
+.number-input {
+  width: 3rem;
+}
+
+.password-display {
+  background-color: rgb(52, 32, 51);
+  color: white;
+  padding: 10px;
+  border: 1px solid white;
+  height: 8rem;
+  width: 600px;
+  display: flex;
+  justify-content: flex;
+  align-items: center;
+  word-break: break-all;
+  border-radius: 2px;
+}
+
+button {
+  grid-column: span 2;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 1rem 1rem;
+  font-weight: bold;
+  border-radius: 2rem;
+  font-size: 18px;
+}
+
 

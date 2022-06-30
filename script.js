@@ -40,7 +40,7 @@ const SPECIAL_CHAR_CODES = arrayFromLowToHigh(91, 96).concat(arrayFromLowToHigh(
 
 function generatePassword(characterAmount, includeUppercase, includeNumbers, includeSymbols, includeSpecialCharacters) {
     let charCodes = LOWERCASE_CHAR_CODES
-    if (includeUppercase) charCodes = charCodes.concat(UPPERCASE_CHAR_CODES)
+     if (includeUppercase) charCodes = charCodes.concat(UPPERCASE_CHAR_CODES)
     if (includeNumbers) charCodes = charCodes.concat(NUMBER_CHAR_CODES)
     if (includeSpecialCharacters) charCodes = charCodes.concat(SPECIAL_CHAR_CODES)
     if (includeSymbols) charCodes= charCodes.concat(SYMBOL_CHAR_CODES)
@@ -71,20 +71,4 @@ function syncCharacterAmount(e) {
     characterAmountRange.value = value 
 }
 
-// Assignment code here
-
-
-// Get references to the #generate element
-// var generateBtn = document.querySelector("#generate");
-
-// Write password to the #password input
-// function writePassword() {
-//  var password = generatePassword();
-//  var passwordText = document.querySelector("#password");
-
-//  passwordText.value = password;
-
-//}
-
-// Add event listener to generate button
-// generateBtn.addEventListener("click", writePassword); 
+// function above syncs the character amount and range to a set value the user chooses

@@ -4,9 +4,10 @@ const characterAmountRange = document.getElementById
 const characterAmountNumber = document.getElementById
 ('characterAmountNumber')
 const includeUppercaseElement = document.getElementById('includeUppercase')
-const includeSpecialCharactersElement = document.getElementById('includeSpecialCharacters')
+
 const includeNumbersElement = document.getElementById('includeNumbers')
 const includeSymbolsElement = document.getElementById('includeSymbols')
+const includeSpecialCharactersElement = document.getElementById('includeSpecialCharacters')
 const form = document.getElementById('passwordGeneratorForm')
 const passwordDisplay = document.getElementById('passwordDisplay')
 
@@ -29,19 +30,19 @@ form.addEventListener('submit', e => {
 })
 //  function above prevents page from refreshing each time password is generated. 
 
-const UPPERCASE_CHAR_CODES = arrayFromLowToHigh(97, 122)
-const LOWERCASE_CHAR_CODES = arrayFromLowToHigh(65, 90)
+const UPPERCASE_CHAR_CODES = arrayFromLowToHigh(65, 90)
+const LOWERCASE_CHAR_CODES = arrayFromLowToHigh(97, 122)
 const NUMBER_CHAR_CODES = arrayFromLowToHigh (48, 57)
 const SYMBOL_CHAR_CODES = arrayFromLowToHigh(33, 47).concat(arrayFromLowToHigh(58, 64))
 const SPECIAL_CHAR_CODES = arrayFromLowToHigh(91, 96).concat(arrayFromLowToHigh(123, 126))
 
 // constants above provide arrays for the password to generate characters from. 
 
-function generatePassword(characterAmount, includeNumbers, includeSpecialCharacters, includeSymbols, includeUppercase) {
+function generatePassword(characterAmount, includeUppercase, includeNumbers, includeSymbols, includeSpecialCharacters) {
     let charCodes = LOWERCASE_CHAR_CODES
     if (includeUppercase) charCodes = charCodes.concat(UPPERCASE_CHAR_CODES)
     if (includeNumbers) charCodes = charCodes.concat(NUMBER_CHAR_CODES)
-    if(includeSpecialCharacters) charCodes = charCodes.concat(SPECIAL_CHAR_CODES)
+    if (includeSpecialCharacters) charCodes = charCodes.concat(SPECIAL_CHAR_CODES)
     if (includeSymbols) charCodes= charCodes.concat(SYMBOL_CHAR_CODES)
     
     const passwordCharacters = []

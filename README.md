@@ -1,4 +1,7 @@
 # mod3challenge
+
+
+
 Password generator
 
 GIVEN I need a new, secure password
@@ -18,6 +21,15 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 
 
+Updated GitHub URL: https://headbanddandy.github.io/mod3challenge/
+
 
 Updated Code to fix small bug
+
+
+<img width="1440" alt="Screen Shot 2022-06-30 at 7 46 53 PM" src="https://user-images.githubusercontent.com/106439402/176802971-f6fd37b4-f4c5-4dbb-bd95-4290c607b3d6.png">
+
+
+<img width="1440" alt="Screen Shot 2022-06-30 at 7 46 04 PM" src="https://user-images.githubusercontent.com/106439402/176802978-40828438-a49d-4334-bd81-2a0a0203b265.png">
+
 
